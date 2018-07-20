@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+docker run --rm \
+    -v "/Users/danfarrell/.aws:/root/.aws"   \
+    -v "/Users/danfarrell/git/cfn-pofc:/code" \
+    -e  AWS_ACCESS_KEY_ID    \
+    -e  AWS_SECRET_ACCESS_KEY    \
+    -e  AWS_SESSION_TOKEN    \
+    -e  AWS_DEFAULT_REGION    \
+    -e  AWS_DEFAULT_OUTPUT    \
+    -e  AWS_PROFILE    \
+    -e  AWS_CA_BUNDLE    \
+    -e  AWS_SHARED_CREDENTIALS_FILE    \
+    -e  AWS_CONFIG_FILE  \
+  farrellit/awscli $@
