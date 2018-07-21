@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-docker run --rm \
+docker run --rm -it \
     -v "`expr ~`/.aws:/root/.aws"   \
     -v "`pwd`:/code" \
     -e  AWS_ACCESS_KEY_ID    \
