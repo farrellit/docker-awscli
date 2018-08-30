@@ -11,4 +11,4 @@ docker run --rm \
     -e  AWS_CA_BUNDLE    \
     -e  AWS_SHARED_CREDENTIALS_FILE    \
     -e  AWS_CONFIG_FILE  \
-  farrellit/awscli $@
+  farrellit/awscli "$@"
